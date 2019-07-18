@@ -1,0 +1,37 @@
+@import url(https://use.fontawesome.com/releases/v5.8.2/css/all.css);
+@import url('../reset.css');
+
+html {
+    font-family: Arial, sans-serif ;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+body {
+    margin: 5em auto;
+    max-width: 40em;
+}
+
+ul {
+    list-style: none outside;
+}
+
+body ul li {
+    opacity: 0;
+    transition-delay: 2s;
+    transition: opacity 1s ease-in-out;
+}
+
+body.loaded ul li {
+    opacity: 1;
+
+}
+
+/*body ul li {*/
+/*    margin-left: 0.7em;*/
+/*    padding-right: 1em;*/
+/*}*/
+
+.fas {
+    margin-right: 0.7em;
+}
