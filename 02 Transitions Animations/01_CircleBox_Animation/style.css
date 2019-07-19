@@ -1,0 +1,29 @@
+@import url('../reset.css');
+
+html {
+    font-family: Arial, sans-serif ;
+    font-size: 15px;
+    line-height: 2;
+}
+
+body {
+    position: relative;
+    width: 100%;
+}
+
+.box {
+    position: absolute;
+    left: 50vw; top: 50vh;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background: orange;
+    border-radius: 0;
+    transition: background 0.1s ease-in-out, border-radius 0.1s ease-in-out;
+}
+
+.box:hover{
+    background: red;
+    border-radius: 50%;
+}
