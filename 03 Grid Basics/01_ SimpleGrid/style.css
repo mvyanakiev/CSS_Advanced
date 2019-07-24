@@ -4,6 +4,11 @@ html {
     font: 16px/1.5 Arial, Helvetica sans-serif;
 }
 
+body {
+    max-width: 45em;
+    margin: 5em auto;
+}
+
 .element {
     background: black;
     border-radius: 0.5em;
@@ -18,13 +23,11 @@ html {
 }
 
 .container {
+    margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(9, 12.5em);
-    grid-template-rows: repeat(9, 3.5em);
+    grid-template-columns: repeat(3, 12.5em);
+    grid-template-rows: repeat(3, 3.5em);
     grid-gap: 1.5em;
 }
-
-.item1 {grid-column: 1 span / 1;}
-.item2 {grid-column: 2 span / 1;}
 
 
