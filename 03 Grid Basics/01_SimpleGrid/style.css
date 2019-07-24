@@ -1,12 +1,7 @@
-@import url('../../reset.css');
+/*@import url('../../reset.css');*/
 
 html {
     font: 16px/1.5 Arial, Helvetica sans-serif;
-}
-
-body {
-    max-width: 45em;
-    margin: 5em auto;
 }
 
 .element {
@@ -23,11 +18,12 @@ body {
 }
 
 .container {
-    margin: 0 auto;
+    margin-top: 5em;
     display: grid;
     grid-template-columns: repeat(3, 12.5em);
     grid-template-rows: repeat(3, 3.5em);
     grid-gap: 1.5em;
+    justify-content: center;
 }
 
 
