@@ -7,12 +7,24 @@ html {
 .element {
     background: black;
     border-radius: 0.5em;
-    /*min-width: 37em;*/
 }
 
 .text {
     color: white;
     padding: 1em;
+}
+
+
+.container {
+    margin: 1em auto;
+    display: grid;
+    width: 95%;
+    height: 80vh;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: 80%;
+    grid-gap: 0.5em;
+    grid-template-areas: "header" "main" "sidebar" "footer";
 }
 
 header {
@@ -31,16 +43,6 @@ footer {
     grid-area: footer;
 }
 
-.container {
-    margin-top: 3em;
-    display: grid;
-    justify-content: center;
-    grid-template-columns: 80%;
-    /*grid-template-columns: repeat(3, 14em);*/
-    /*grid-template-rows: repeat(3, 4em);*/
-    grid-gap: 0.5em;
-    grid-template-areas: "header" "main" "sidebar" "footer";
-}
 
 @media only screen and (min-width: 1024px) {
 
