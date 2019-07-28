@@ -1,5 +1,17 @@
+html{
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
 body {
-    margin: 5em auto;
+    margin: 1em auto;
     max-width: 55em;
     background: #cccccc;
 }
@@ -12,9 +24,13 @@ ul li {
     height: 1fr;
     position: relative;
     overflow: hidden;
+    border-radius: 0.5em;
 }
 
 .gallery{
+    margin: 0 auto;
+    padding: 0 1em;
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1em;
@@ -22,31 +38,6 @@ ul li {
     align-content: center;
     grid-auto-flow: dense;
 }
-
-
-
-
-/*body > ul > li > img .big .sq{*/
-/*    width: 100%;*/
-/*    height: auto;*/
-/*}*/
-
-
-/*body > ul > li > img .big .land{*/
-/*    width: 100%;*/
-/*    height: auto;*/
-/*}*/
-
-
-/*li .portrait {*/
-/*    width: 100%;*/
-/*    height: auto;*/
-/*    position: absolute;*/
-/*    top: 50%;*/
-/*    left: 50%;*/
-/*    transform: translate(-50%, -50%);*/
-/*}*/
-
 
 .small{
     grid-row: span 1;
@@ -67,7 +58,6 @@ ul li {
     grid-row: span 1;
     grid-column: span 2;
 }
-
 
 .small:before{
     content: '';
@@ -93,26 +83,19 @@ ul li {
     display: block;
 }
 
-
-
-
 body ul li img {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    /*width: auto;*/
-    /*height: 100%;*/
 }
 
 img.land{
-    background: red;
     width: 100%;
     height: auto;
 }
 
 img.por{
-    background: blue;
     height: 100%;
     width: auto;
 }
