@@ -1,0 +1,119 @@
+body {
+    margin: 5em auto;
+    max-width: 55em;
+    background: #cccccc;
+}
+
+ul li {
+    list-style: none outside;
+    display: block;
+    background: gray;
+    color: white;
+    height: 1fr;
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1em;
+    justify-content: center;
+    align-content: center;
+    grid-auto-flow: dense;
+}
+
+
+
+
+/*body > ul > li > img .big .sq{*/
+/*    width: 100%;*/
+/*    height: auto;*/
+/*}*/
+
+
+/*body > ul > li > img .big .land{*/
+/*    width: 100%;*/
+/*    height: auto;*/
+/*}*/
+
+
+/*li .portrait {*/
+/*    width: 100%;*/
+/*    height: auto;*/
+/*    position: absolute;*/
+/*    top: 50%;*/
+/*    left: 50%;*/
+/*    transform: translate(-50%, -50%);*/
+/*}*/
+
+
+.small{
+    grid-row: span 1;
+    grid-column: span 1;
+}
+
+.big{
+    grid-row: span 2;
+    grid-column: span 2;
+}
+
+/*.portrait{*/
+/*    grid-row: span 1;*/
+/*    grid-column: span 2;*/
+/*}*/
+
+/*.landscape{*/
+/*    grid-row: span 1;*/
+/*    grid-column: span 2;*/
+/*}*/
+
+
+.small:before{
+    content: '';
+    padding-top: 100%;
+    display: block;
+}
+
+.big:before{
+    content: '';
+    padding-top: 100%;
+    display: block;
+}
+
+/*.landscape:before{*/
+/*    content: '';*/
+/*    padding-top: 100%;*/
+/*    display: block;*/
+/*}*/
+
+/*.portrait:before{*/
+/*    content: '';*/
+/*    padding-top: 100%;*/
+/*    display: block;*/
+/*}*/
+
+
+
+
+body ul li img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*width: auto;*/
+    /*height: 100%;*/
+}
+
+img.land{
+    background: red;
+    width: 100%;
+    height: auto;
+}
+
+img.por{
+    background: blue;
+    height: 100%;
+    width: auto;
+}
+
