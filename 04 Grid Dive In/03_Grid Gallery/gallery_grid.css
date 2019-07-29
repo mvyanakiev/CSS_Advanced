@@ -11,15 +11,15 @@ html{
 }
 
 body {
-    margin: 1em auto;
-    max-width: 55em;
+    margin: 0 auto;
+    max-width: 65em;
     background: #cccccc;
 }
 
-ul li {
+ul.gallery li {
     list-style: none outside;
     display: block;
-    height: 1fr;
+    /*height: 1fr;*/
     position: relative;
     overflow: hidden;
     border-radius: 0.5em;
@@ -27,7 +27,8 @@ ul li {
 
 .gallery{
     margin: 0 auto;
-    padding: 0 1em;
+    padding: 1em 2em;
+    background: white;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -81,7 +82,7 @@ ul li {
     display: block;
 }
 
-body ul li img {
+ul.gallery li img {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -102,7 +103,7 @@ img.por{
 
     .gallery {
         grid-template-columns: repeat(2, 1fr);
-        padding: 0 0.5em;
+        padding: 1em;
         gap: 0.5em;
     }
 }
