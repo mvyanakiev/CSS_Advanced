@@ -19,8 +19,6 @@ body {
 ul li {
     list-style: none outside;
     display: block;
-    background: gray;
-    color: white;
     height: 1fr;
     position: relative;
     overflow: hidden;
@@ -100,3 +98,18 @@ img.por{
     width: auto;
 }
 
+@media screen and (max-width: 350px) {
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 0.5em;
+        gap: 0.5em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
